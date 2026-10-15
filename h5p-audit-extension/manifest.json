@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "tool bởi kienmv",
+  "version": "1.4.2",
+  "description": "Kiểm tra cấu trúc và nội dung H5P",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://lms360.vn/*",
+    "https://*.lms360.vn/*"
+  ],
+  "action": {
+    "default_title": "H5P Audit Helper",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

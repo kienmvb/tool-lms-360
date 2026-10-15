@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>H5P Audit Helper</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 420px;
+      padding: 12px;
+      color: #222;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    button {
+      width: 100%;
+      padding: 11px;
+      border: 0;
+      border-radius: 6px;
+      background: #1769aa;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: wait;
+    }
+
+    #status {
+      margin: 10px 0;
+      font-size: 13px;
+    }
+
+    #out {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      max-height: 480px;
+      overflow-y: auto;
+      font-size: 12px;
+      background: #f3f5f7;
+      padding: 10px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h2>H5P Audit Helper</h2>
+  <button id="scan" type="button">Quét nội dung H5P</button>
+  <p id="status">Sẵn sàng.</p>
+  <pre id="out">Mở trang bài luyện tập H5P rồi nhấn nút quét.</pre>
+  <script src="popup.js"></script>
+</body>
+</html>
